@@ -1,12 +1,12 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
 }
 
 .fa-solid {
@@ -15,7 +15,9 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -50,7 +52,44 @@ body {
 }
 
 .neutralStar {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+}
+
+/***** Header ******/
+.logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+.nav-hebergements-and-activity {
+    display: flex;
+    gap: 68px;
+}
+.logoBooki {
+    height: 19px;
+    padding: 30px 0;
+}
+
+.nav-link {
+    padding-top: 14px;
+    border-top: solid 2px transparent;
+    color: #000;
+    text-decoration: none;
+}
+.nav-link:hover {
+    border-top-color: #0065fc;
+    color: #0065fc;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0;
+}
+.text-h1 {
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -115,9 +154,6 @@ body {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
